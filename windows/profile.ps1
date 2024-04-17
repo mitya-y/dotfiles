@@ -51,3 +51,5 @@ Set-Alias history History-Function
 
 Set-Alias grep Select-String
 Set-Alias touch ni
+
+Import-Module posh-git
