@@ -53,3 +53,15 @@ Set-Alias grep Select-String
 Set-Alias touch ni
 
 Import-Module posh-git
+
+Set-Alias far C:\'Program Files'\'Far manager'\Far.exe
+
+Invoke-Expression (& { (zoxide init powershell | Out-String) })
+Remove-Alias cd
+Set-Alias cd z
+
+Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
+New-Alias open ii
+
+Remove-Alias cat
+Set-Alias cat bat
