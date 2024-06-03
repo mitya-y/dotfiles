@@ -1,7 +1,8 @@
 Write-Output "cgsg forever!"
 
-# oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\robbyrussell.omp.json" | Invoke-Expression
-# oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\lightgreen.omp.json" | Invoke-Expression
+#oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\robbyrussell.omp.json" | Invoke-Expression
+#oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\lightgreen.omp.json" | Invoke-Expression
+#oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\cert.omp.json" | Invoke-Expression
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\cinnamon.omp.json" | Invoke-Expression
 
 Set-Alias winfetch pwshfetch-test-1
@@ -45,7 +46,7 @@ Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 
 function History-Function {
    $historyFilePath = (Get-PSReadlineOption).HistorySavePath
-   Get-Content -Path $historyFilePath 
+   less $historyFilePath
 }
 Set-Alias history History-Function
 
