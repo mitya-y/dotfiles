@@ -1,0 +1,16 @@
+{
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false,
+        "<C-h>": false,
+    },
+    "editor.rulers": [
+        100
+    ],
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+    "workbench.colorTheme": "Tokyo After Dark",
+    "keyboard.dispatch": "keyCode"
+}
