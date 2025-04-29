@@ -71,7 +71,10 @@ alias cat=bat
 alias cd=z
 alias ls=lsd
 
+alias open=xdg-open
+
 export PATH="$HOME/.local/bin":$PATH
 
 # for kitty
 alias clear_full="printf '\033[2J\033[3J\033[1;1H'"
+

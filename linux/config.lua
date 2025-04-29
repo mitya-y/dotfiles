@@ -36,12 +36,13 @@ lvim.keys.normal_mode["<leader>bp"] = ":bprevious<CR>"
 lvim.keys.normal_mode["<leader>bd"] = ":bd<CR>"
 lvim.keys.normal_mode["<leader>bl"] = ":Telescope buffers<CR>"
 
+lvim.keys.normal_mode["<leader>y"] = "\"+y"
+
 -- Helpfull keys: space+l - some code stuff
 --                space+d - debug stuff
 --                space+s - sarch stuff
 --                space+g - git stuff
 --                space+b - files
 --                space+; - start page
-
 
 
