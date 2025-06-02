@@ -36,7 +36,16 @@ lvim.keys.normal_mode["<leader>bp"] = ":bprevious<CR>"
 lvim.keys.normal_mode["<leader>bd"] = ":bd<CR>"
 lvim.keys.normal_mode["<leader>bl"] = ":Telescope buffers<CR>"
 
-lvim.keys.normal_mode["<leader>y"] = "\"+y"
+
+vim.opt.clipboard = ""
+vim.keymap.set({"n", "v"}, "<C-c>", '"+y', {
+  noremap = true,
+  silent = true
+})
+vim.keymap.set("v", "<C-c>", '"+ygv<Esc>', {
+  noremap = true,
+  silent = true
+})
 
 -- Helpfull keys: space+l - some code stuff
 --                space+d - debug stuff
