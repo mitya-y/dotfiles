@@ -2,9 +2,33 @@
   "vim.handleKeys": {
     "<C-a>": false,
     "<C-f>": false,
-    "<C-h>": false
+    "<C-h>": false,
   },
-  "vim.opt.langmap": "ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯЖ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчняж;abcdefghijklmnopqrstuvwxyz",
+  // "vim.opt.langmap": "ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯЖ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчняж;abcdefghijklmnopqrstuvwxyz",
+
+  "vim.normalModeKeyBindings": [
+    { "before": ["ф"], "after": ["a"] },
+    { "before": ["ш"], "after": ["i"] },
+    { "before": ["щ"], "after": ["o"] },
+    { "before": ["Щ"], "after": ["O"] },
+
+    { "before": ["г"], "after": ["u"] },
+    { "before": ["к"], "after": ["r"] },
+
+    { "before": ["у"], "after": ["e"] },
+    { "before": ["ц"], "after": ["w"] },
+    { "before": ["и"], "after": ["b"] },
+
+    { "before": ["о"], "after": ["j"] },
+    { "before": ["л"], "after": ["k"] },
+    { "before": ["д"], "after": ["l"] },
+    { "before": ["р"], "after": ["h"] },
+
+    // Modifying doesn't work now
+    // { "before": ["в"], "after": ["d"] },
+    // { "before": ["н"], "after": ["y"] },
+    // { "before": ["м"], "after": ["v"] },
+  ],
 
   "editor.rulers": [
       120
@@ -37,5 +61,5 @@
   ],
   "latex-workshop.latex.autoBuild.run": "onFileChange",
   "latex-workshop.view.pdf.viewer": "tab",
-  "latex-workshop.latex.autoClean.run": "onFailed"
+  "latex-workshop.latex.autoClean.run": "onFailed",
 }
