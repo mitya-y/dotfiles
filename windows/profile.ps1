@@ -44,6 +44,8 @@ Set-Alias poweroff Poweroff-Function
 Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 
+Set-PSReadLineKeyHandler -Chord "Ctrl+Spacebar" -Function HistorySearchBackward
+
 function History-Function {
    $historyFilePath = (Get-PSReadlineOption).HistorySavePath
    less $historyFilePath
