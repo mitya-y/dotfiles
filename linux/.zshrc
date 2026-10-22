@@ -65,16 +65,42 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
 
-eval "$(zoxide init zsh)"
+# zoxide
+# eval "$(zoxide init zsh)"
+# alias cd=z
 
-alias cat=bat
-alias cd=z
-alias ls=lsd
+# utils
+# alias cat=bat
+# alias ls=lsd
 
-alias open=xdg-open
+# open
+# alias open=xdg-open
+# alias open=explorer.exe .
 
 export PATH="$HOME/.local/bin":$PATH
 
 # for kitty
 alias clear_full="printf '\033[2J\033[3J\033[1;1H'"
+
+# for correct CPM usage
+# export CPM_SOURCE_CACHE=$HOME/.cache/CPM
+
+# Proxy for terminal (curl, etc). Must be full URL, not just a port number.
+# Switch: set ACTIVE_PROXY=hiddify or nekobox, then open a new terminal (or: source ~/.zshrc)
+# Check: curl -s --max-time 8 https://ifconfig.me && echo
+# export HIDDIFY_HTTP_PROXY="http://127.0.0.1:XXXX"
+# export HIDDIFY_SOCKS_PROXY="socks5h://127.0.0.1:XXXX"
+# export ACTIVE_PROXY="${ACTIVE_PROXY:-hiddify}"  # hiddify | off
+# 
+# case "$ACTIVE_PROXY" in
+#   off)
+#     unset http_proxy https_proxy HTTP_PROXY HTTPS_PROXY all_proxy ALL_PROXY
+#     ;;
+#   *)
+#     export http_proxy="$HIDDIFY_HTTP_PROXY" https_proxy="$HIDDIFY_HTTP_PROXY"
+#     export HTTP_PROXY="$HIDDIFY_HTTP_PROXY" HTTPS_PROXY="$HIDDIFY_HTTP_PROXY"
+#     export all_proxy="$HIDDIFY_SOCKS_PROXY" ALL_PROXY="$HIDDIFY_SOCKS_PROXY"
+#     ;;
+# esac
+
 
